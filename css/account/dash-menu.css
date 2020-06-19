@@ -1,0 +1,31 @@
+.dash-menu {
+    width: 290px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.menu-links{
+    border-radius: 5px;
+    color:#f1f1f1;
+    font-size: 14px;
+    font-weight: 600;
+    background: #666674;
+   list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 21px 0;
+}
+
+.menu-link {
+    padding:14px 40px;
+    width: 100%;
+    margin: 0;
+    cursor: pointer;
+    transition-property: color, background;
+    transition-duration: 300ms;
+}
+
+.menu-link:hover{
+    background:#E19F67;
+    color:white;
+}
