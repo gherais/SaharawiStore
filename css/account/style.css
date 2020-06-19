@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", arial;
+    margin: 0;
+    background: #F5F7F7;
+    --main-color: #E19F67;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 1170px;
+    margin: 15px auto;
+}
+
+@media(max-width: 1199px) and (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media(max-width: 991px) and (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media(max-width: 767px) and (min-width: 375px) {
+    .container {
+        width: auto;
+        padding: 0 6px;
+    }
+}
+
+@media(max-width: 374px) {
+    .container {
+        width: auto;
+        padding: 0;
+    }
+}
