@@ -6,7 +6,7 @@ body {
     font-family: "Raleway", arial;
     margin: 0;
     background: #F5F7F7;
-    --main-color: #E19F67;//#1A73E8//#E8F0FE//#666674
+    --main-color: #E19F67; //#1A73E8//#E8F0FE//#666674
 }
 
 .container {
@@ -16,26 +16,54 @@ body {
     margin: 15px auto;
 }
 
+.dash-menu {
+    width: 290px;
+    height: auto;
+    border-radius: 5px;
+}
+
 .my-grid {
-    display:flex;
+    display: flex;
 }
 
 @media(max-width: 1199px) and (min-width: 992px) {
     .container {
         width: 970px;
     }
-}
 
-@media(max-width: 991px) and (min-width:768px) {
-    .container {
-        width: 750px;
+    .dash-menu {
+        width: 310px;
     }
 }
 
-@media(max-width: 767px) and (min-width: 375px) {
+@media(max-width: 991px) and (min-width:801px) {
+    .container {
+        width: 750px;
+    }
+
+    .my-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-item {
+        width: 100%;
+    }
+}
+
+@media(max-width: 800px) and (min-width: 375px) {
     .container {
         width: auto;
-        padding: 0 6px;
+    }
+
+    .my-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-item {
+        width: 100%;
+        margin: 5px 0;
     }
 }
 
@@ -43,5 +71,15 @@ body {
     .container {
         width: auto;
         padding: 0;
+    }
+
+    .my-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-item {
+        width: 100%;
+        margin: 5px 0;
     }
 }

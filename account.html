@@ -8,8 +8,8 @@
     <link href="./css/reusables.css" rel="stylesheet" />
     <link href="./css/header.css" rel="stylesheet" />
     <link href="./css/account/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css//account/dash-menu.css" />
-    <link rel="stylesheet" href="./css//account/home-content.css" />
+    <link rel="stylesheet" href="./css/account/dash-menu.css" />
+    <link rel="stylesheet" href="./css/account/home-content.css" />
     <link href="./css/footer.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,7 +47,7 @@
     </header>
     <!--**********************************************************************************************************/-->
     <div class="container my-grid">
-        <section class="dash-menu">
+        <section class="dash-menu flex-item">
             <ul class="menu-links">
                 <li class="menu-link">My Orders</li>
                 <li class="menu-link">My Addresses</li>
@@ -55,15 +55,36 @@
                 <li class="menu-link">Account settings</li>
             </ul>
         </section>
-        <section class="home-content">
+        <section class="home-content flex-item">
             <section class="icons-present-container">
+               <article class="icon-present" onmouseenter="articleMouseEntered(this)" onmouseleave="articleMouseLeft(this)">
+                    <div class="link-header">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <h3>My cart</h3>
+                    </div>
+                    <div class="link-body">
+                        <div class="desc-holder"><a href="#">Review the items</a> in your <a href="#">cart</a>, so you can proceed to <a href="#">checkout</a> 
+                        </div>
+                    </div>
+                </article>
+                <article class="icon-present" onmouseenter="articleMouseEntered(this)" onmouseleave="articleMouseLeft(this)">
+                    <div class="link-header">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        <h3>My wishlist</h3>
+                    </div>
+                    <div class="link-body">
+                        <div class="desc-holder">We provide an option for <a href="#">distributing copies</a> of your list to family, friends, and other stakeholders who are likely to purchase gifts for you, or to offer some of the listed items for sale.
+                        </div>
+                    </div>
+                </article>
                 <article class="icon-present" onmouseenter="articleMouseEntered(this)" onmouseleave="articleMouseLeft(this)">
                     <div class="link-header">
                         <i class="fa  fa-shopping-basket" aria-hidden="true"></i>
                         <h3>My orders</h3>
                     </div>
                     <div class="link-body">
-                        <div class="desc-holder">Check your <a href="#">order history</a> and keep track of all <a href="#">current</a> and <a href="#">past orders</a>. this section allows you to get up-to-date information on each order placed online, including payment, shipping and delivery updates. 
+                        <div class="desc-holder">Check your <a href="#">order history</a> and keep track of all <a href="#">current</a> and <a href="#">past orders</a>. this section allows you to get up-to-date information on each order placed online, including payment, shipping and delivery updates.
+                        </div>
                     </div>
                 </article>
                 <article class="icon-present" onmouseenter="articleMouseEntered(this)" onmouseleave="articleMouseLeft(this)">
@@ -72,7 +93,8 @@
                         <h3>My addresses</h3>
                     </div>
                     <div class="link-body">
-                        <div class="desc-holder">You can <a href="#">add a new address</a> to use it as shipping or billing address any time you place an order, and you can <a href="#">Manage addresses</a> and <a href="#">update</a> or <a href="#">delete</a> them.</div>
+                        <div class="desc-holder">You can <a href="#">add a new address</a> to use it as shipping or billing address any time you place an order, and you can <a href="#">Manage addresses</a> and <a href="#">update</a> or <a href="#">delete</a> them.
+                        </div>
                     </div>
                 </article>
                 <article class="icon-present" onmouseenter="articleMouseEntered(this)" onmouseleave="articleMouseLeft(this)">
@@ -81,9 +103,21 @@
                         <h3>My payment methods</h3>
                     </div>
                     <div class="link-body">
-                        <div class="desc-holder">You can <a href="#">add a new address</a> to use it as shipping or billing address any time you place an order, and you can <a href="#">Manage addresses</a> and <a href="#">update</a> or <a href="#">delete</a> them.</div>
+                        <div class="desc-holder">You can <a href="#">add</a>,  <a href="#">update</a> or <a href="#">delete</a>  your payment information (credit or debit card, bank information, or paypal account.)
+                        </div>
                     </div>
                 </article>
+                <article class="icon-present" onmouseenter="articleMouseEntered(this)" onmouseleave="articleMouseLeft(this)">
+                    <div class="link-header">
+                        <i class="fa  fa-cog" aria-hidden="true"></i>
+                        <h3>Settings</h3>
+                    </div>
+                    <div class="link-body">
+                        <div class="desc-holder">Change your personal information: <a href="#">password</a> or <a href="#">username</a>, <a href="#">email</a>, <a href="#">full name</a>
+                        </div>
+                    </div>
+                </article>
+                
             </section>
         </section>
     </div>
