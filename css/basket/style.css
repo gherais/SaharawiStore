@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #F5F7F7;
+    margin: 0px;
+    font-family: Raleway, arial;
+    --main-color: #E19F67; //#1A73E8
+}
+
+.shopping-basket {
+    grid-area: shoppingBasket;
+    width: 800px;
+}
+
+.SPA-menu {
+    grid-area: spaMenu;
+    width: 100%;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 1170px;
+    margin: 15px auto;
+}
+
+.grid1 {
+    display: grid;
+    gap: 1%;
+    grid-template-areas: 'shoppingBasket shoppingBasket spaMenu';
+}
+
+@media(max-width: 1199px) and (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+
+    .grid1 {
+        gap: 1%;
+        grid-template-areas: 'shoppingBasket shoppingBasket spaMenu';
+    }
+
+    .shopping-basket {
+        grid-area: shoppingBasket;
+        width: 650px;
+    }
+}
+
+@media(max-width: 991px) and (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+
+    .grid1 {
+        gap: 1%;
+        grid-template-areas: 'shoppingBasket shoppingBasket spaMenu';
+    }
+
+    .shopping-basket {
+        grid-area: shoppingBasket;
+        width: 100%;
+    }
+}
+
+@media(max-width: 767px) and (min-width: 375px) {
+    .container {
+        width: auto;
+        padding: 0 6px;
+    }
+
+    .grid1 {
+        gap: 0;
+        grid-template-areas: 'shoppingBasket''spaMenu';
+    }
+
+    .shopping-basket {
+        width: 100%;
+    }
+}
+
+@media(max-width: 374px) {
+    .container {
+        width: auto;
+        padding: 0;
+    }
+
+    .grid1 {
+        gap: 0;
+        grid-template-areas: 'shoppingBasket''spaMenu';
+    }
+
+    .shopping-basket {
+        width: 100%;
+    }
+}

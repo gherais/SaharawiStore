@@ -1,0 +1,207 @@
+.shopping-basket {
+    background: white;
+    padding: 1rem;
+}
+
+.titleH1 {
+    font-weight: 300;
+    letter-spacing: .1rem;
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.items-in-basket-table {
+    margin: 1rem 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.items-in-basket-table thead {
+    color: #9090a0;
+    font-style: italic;
+    text-align: left;
+    font-weight: 500;
+    font-size: .9em;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+th:last-child {
+    text-align: right;
+}
+
+th:first-child {
+    text-align: center;
+}
+
+
+thead tr {
+    border-bottom: 2px solid #d0d0d0;
+}
+
+.item-row {
+    border-top: 1px solid #d0d0d0;
+}
+
+.imgColumn {
+    padding: .7em 0 0 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.imgColumn img {
+    width: 50px;
+    height: 50px;
+}
+
+.productColumn,
+.shippingToColumn {
+    padding-right: auto;
+}
+
+.productColumn.productHolder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.productHolder h5 {
+    padding: .5em 0 0 0;
+    margin: 0;
+    font-size: 1em;
+    cursor: pointer;
+    display: inline-block;
+    transition-property: color;
+    transition-duration: 100ms;
+    color: #696969;
+}
+
+.productHolder h5:hover {
+    color: dodgerblue;
+}
+
+.productHolder p {
+    padding: 0;
+    margin: .2rem 0;
+    font-size: .9em;
+    color: darkseagreen;
+}
+
+.productHolder .links {
+    padding: 0 0 .5em 0;
+    margin: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.productHolder .links a {
+    padding: 0 1.5rem 0 0;
+    margin: 0;
+    font-size: .9em;
+    text-decoration: none;
+    color: #646494;
+}
+
+.productHolder .links a:hover {
+    text-decoration: underline;
+}
+
+.amountColumn {}
+
+.amountColumn input {
+    width: 60px;
+}
+
+.priceColumn {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.shippingToColumn {
+    padding-bottom: 1rem;
+}
+
+.shippingToColumn .holder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.shippingToColumn .holder select {
+    margin-left: 1rem;
+    width: auto;
+    height: 30px;
+}
+
+tfoot tr {
+    border-top: 3px solid #606060;
+}
+
+tfoot tr td.totalColumn {
+    color: black;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: 1rem 0;
+}
+
+.checkout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkoutButton {
+    background: linear-gradient(rgb(255, 204, 82) 0px, rgb(248, 183, 30) 100%);
+    color: black;
+    padding: 18px 107px;
+    border: 1px solid black;
+    border-radius: .3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Raleway, arial;
+    cursor: pointer;
+    transition-property: color, background, border-color, box-shadow;
+    transition-duration: 100ms;
+    box-shadow: 1px 1px 10px -5px transparent;
+}
+
+.checkoutButton:hover {
+    background: linear-gradient(rgb(248, 183, 30) 100%, rgb(255, 204, 82) 0px);
+    border-color: #606060;
+    box-shadow: 1px -1px 20px -8px black;
+}
+
+@media(max-width: 767px) and (min-width:375px) {
+    .amountColumn input {
+        width: 40px;
+        font-size: 16px;
+    }
+
+    .checkoutButton {
+        padding: 16px 35px;
+    }
+
+    .productHolder .links, .productHolder p {
+        font-size: 14px;
+    }
+}
+@media(max-width: 374px){
+    .amountColumn input {
+        width: 40px;
+        font-size: 16px;
+    }
+    .checkoutButton {
+        padding: 14px 30px;
+    }
+    
+    .productHolder .links, .productHolder p {
+        font-size: 14px;
+    }
+}

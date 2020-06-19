@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Basket</title>
+    <script src="https://use.fontawesome.com/51fb3ec353.js"></script>
+    <link href="./css/reusables.css" rel="stylesheet" />
+    <link href="./css/header.css" rel="stylesheet" />
+    <link href="./css/basket/style.css" rel="stylesheet" />
+    <link href="./css/basket/shoppingBasket.css" rel="stylesheet" />
+    <link href="./css/basket/spaMenu.css" rel="stylesheet" />
+    <link href="./css/basket/offers.css" rel="stylesheet" />
+    <link href="./css/footer.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div class="preNav">
+            <h1 class="logoHolder">SaharawiStore</h1>
+        </div>
+        <nav class="navBar">
+            <div onclick="burgerClicked(this)" class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="logoContainer">
+                <a href="#" class='logo'>SaharawiStore</a>
+            </div>
+            <ul id="links" class="links hide">
+                <li class="link active">Home <i class="fa fa-home" aria-hidden="true"></i></li>
+                <li class="link" onmouseenter="mouseInLinks(this)" onmouseleave="mouseOutLinks(this)">
+                    <span>Categories <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                    <ul id="categories">
+                        <li>Men</li>
+                        <li>Women</li>
+                        <li>Kids</li>
+                    </ul>
+                </li>
+                <li class="link">Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+                <li class="link">Account <i class="fa fa-user" aria-hidden="true"></i></li>
+                <li class="link">About Us</li>
+            </ul>
+        </nav>
+    </header>
+    <!--**********************************************************************************************************/-->
+
+    <div class="container grid1">
+        <section class="shopping-basket">
+            <h1 class="titleH1">Your shopping basket</h1>
+            <table class="items-in-basket-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th></th>
+                        <th>Amount</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="item-row">
+                        <td class="imgColumn"><img src="images/People&Products/1%20(1).jpg" /></td>
+                        <td class="productColumn">
+                            <div class="productHolder">
+                                <h5>Name of item</h5>
+                                <p>Available immediatly</p>
+                                <div class="links">
+                                    <a href="#">Move to wishlist</a>
+                                    <a href="#">Delete</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="amountColumn"><input type="number" value="1" /></td>
+                        <td class="priceColumn">$47</td>
+                    </tr>
+                    <tr class="item-row">
+                        <td class="imgColumn"><img src="images/People&Products/1%20(3).jpg" /></td>
+                        <td class="productColumn">
+                            <div class="productHolder">
+                                <h5>Wiw of this item is</h5>
+                                <p>Available immediatly</p>
+                                <div class="links">
+                                    <a href="#">Move to wishlist</a>
+                                    <a href="#">Delete</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="amountColumn"><input type="number" value="1" /></td>
+                        <td class="priceColumn">$67</td>
+                    </tr>
+                    <tr class="item-row">
+                        <td class="imgColumn"><img src="images/People&Products/1%20(6).jpg" /></td>
+                        <td class="productColumn">
+                            <div class="productHolder">
+                                <h5>Targui labess lazrag</h5>
+                                <p>Available immediatly</p>
+                                <div class="links">
+                                    <a href="#">Move to wishlist</a>
+                                    <a href="#">Delete</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="amountColumn"><input type="number" value="1" /></td>
+                        <td class="priceColumn">$134</td>
+                    </tr>
+                    <tr class="item-row">
+                        <td class="imgColumn"><img src="images/utils/vippng.com-van-png-4295710.png" /></td>
+                        <td class="shippingToColumn">
+                            <div class="holder">
+                                <h5>Shipping to</h5>
+                                <select>
+                                    <option>Algeria</option>
+                                    <option>Maroc</option>
+                                    <option>Tunisia</option>
+                                    <option>USA</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td class="priceColumn">$7</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="totalColumn TotalForMobile"></td>
+                        <td class="totalColumn TotalForBigScreen">Total: $665</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <section class="checkout">
+                <button class="checkoutButton">Go To Checkout</button>
+            </section>
+        </section>
+        <section class="SPA-menu">
+            <article class="availability-infos">
+                <h3>Note on availability</h3>
+                <p>All items in your shopping basket are in stock and can be shipped immediately.
+                </p>
+            </article>
+            <article class="shipping-infos">
+                <h3>Shipping Informations</h3>
+                <p>Here you put some shipping information and dates and periods to arive</p>
+            </article>
+            <article class="payment-infos">
+                <h3>Payment Methods</h3>
+                <p>You can pay at our checkout using the following payment methods: Bank Transfer, Credit/Debit Card, PayPal.
+                </p>
+                <div class="payments-logos-holder">
+                    <div class="logo-wrapper"><img src="./images/utils/FAVPNG_wire-transfer-electronic-funds-transfer-bank-payment_vzH3htca.png" /></div>
+                    <div class="logo-wrapper"><img src="./images/utils/FAVPNG_credit-card-visa-electron-payment-visa-debit_0RCjhWVe.png" /></div>
+                    <div class="logo-wrapper"><img src="./images/utils/mc_vrt_opt_pos_73_3x.png" /></div>
+                    <div class="logo-wrapper"><img src="./images/utils/paypal-logo_0096006401665860.png" /></div>
+                </div>
+            </article>
+        </section>
+    </div>
+    <div class="container">
+        <section class="offers">
+            <div class="offer" onmouseenter="mouseInBonus(this)" onmouseleave="mouseOutBonus(this)">
+                <div class="img-holder"><img src="./images/People&Products/1%20(1).jpg" alt=""></div>
+                <div class="offer-info">
+                    <div class="name">The name of the product</div>
+                    <div class="price">$47 </div>
+                </div>
+                <div class="bonus">
+                    <number>%50 </number> Off!
+                </div>
+                <div class="addToCartHolder"><i class="fa fa-cart-plus" aria-hidden="true"></i></div>
+            </div>
+            <div class="offer" onmouseenter="mouseInBonus(this)" onmouseleave="mouseOutBonus(this)">
+                <div class="img-holder"><img src="./images/People&Products/1%20(2).jpg" alt=""></div>
+                <div class="offer-info">
+                    <div class="name">Product wiytd</div>
+                    <div class="price">$407 </div>
+                </div>
+                <div class="bonus">
+                    <number>%50 </number> Off!
+                </div>
+                <div class="addToCartHolder"><i class="fa fa-cart-plus" aria-hidden="true"></i></div>
+            </div>
+            <div class="offer" onmouseenter="mouseInBonus(this)" onmouseleave="mouseOutBonus(this)">
+                <div class="img-holder"><img src="./images/People&Products/1%20(3).jpg" alt=""></div>
+                <div class="offer-info">
+                    <div class="name">Thailand smoke</div>
+                    <div class="price">$90 </div>
+                </div>
+                <div class="bonus">
+                    <number>%50 </number> Off!
+                </div>
+                <div class="addToCartHolder"><i class="fa fa-cart-plus" aria-hidden="true"></i></div>
+            </div>
+            <div class="offer" onmouseenter="mouseInBonus(this)" onmouseleave="mouseOutBonus(this)">
+                <div class="img-holder"><img src="./images/People&Products/1%20(4).jpg" alt=""></div>
+                <div class="offer-info">
+                    <div class="name">Katchy</div>
+                    <div class="price">$309 </div>
+                </div>
+                <div class="bonus">
+                    <number>%50 </number> Off!
+                </div>
+                <div class="addToCartHolder"><i class="fa fa-cart-plus" aria-hidden="true"></i></div>
+            </div>
+            <div class="offer" onmouseenter="mouseInBonus(this)" onmouseleave="mouseOutBonus(this)">
+                <div class="img-holder"><img src="./images/People&Products/1%20(5).jpg" alt=""></div>
+                <div class="offer-info">
+                    <div class="name">Vantra</div>
+                    <div class="price">$73 </div>
+                </div>
+                <div class="bonus">
+                    <number>%50 </number> Off!
+                </div>
+                <div class="addToCartHolder"><i class="fa fa-cart-plus" aria-hidden="true"></i></div>
+            </div>
+            <div class="offer" onmouseenter="mouseInBonus(this)" onmouseleave="mouseOutBonus(this)">
+                <div class="img-holder"><img src="./images/People&Products/1%20(6).jpg" alt=""></div>
+                <div class="offer-info">
+                    <div class="name">The product of Aabaya, red one</div>
+                    <div class="price">$9 </div>
+                </div>
+                <div class="bonus">
+                    <number>%50 </number> Off!
+                </div>
+                <div class="addToCartHolder"><i class="fa fa-cart-plus" aria-hidden="true"></i></div>
+            </div>
+            <div class="offer" onmouseenter="mouseInBonus(this)" onmouseleave="mouseOutBonus(this)">
+                <div class="img-holder"><img src="./images/People&Products/1%20(7).jpg" alt=""></div>
+                <div class="offer-info">
+                    <div class="name">Eat a bitch please</div>
+                    <div class="price">$1000 </div>
+                </div>
+                <div class="bonus">
+                    <number>%50 </number> Off!
+                </div>
+                <div class="addToCartHolder"><i class="fa fa-cart-plus" aria-hidden="true"></i></div>
+            </div>
+            <div class="offer" onmouseenter="mouseInBonus(this)" onmouseleave="mouseOutBonus(this)">
+                <div class="img-holder"><img src="./images/People&Products/1%20(8).jpg" alt=""></div>
+                <div class="offer-info">
+                    <div class="name">I'm using brackets, it's very fun</div>
+                    <div class="price">$1265 </div>
+                </div>
+                <div class="bonus">
+                    <number>%50 </number> Off!
+                </div>
+                <div class="addToCartHolder"><i class="fa fa-cart-plus" aria-hidden="true"></i></div>
+            </div>
+        </section>
+    </div>
+
+    <!--/***********************************************************************************************************/-->
+
+    <footer class="footer">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+        <div class="copyright">
+            <p>Copyright © 2020 <wiw>SahrawiStore</wiw>. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/basket-offers.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+.availability-infos,
+.shipping-infos,
+.payment-infos {
+    width: 100%;
+    background: white;
+    padding: 1rem;
+}
+
+.availability-infos {
+    margin-bottom: .5rem;
+}
+
+.shipping-infos {
+    margin-bottom: .5rem;
+}
+
+.payment-infos {}
+
+.SPA-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.availability-infos h3,
+.payment-infos h3,
+.shipping-infos h3 {
+    margin: 0;
+    font-weight: 300;
+    padding-bottom: .3rem;
+    font-size: 16px;
+}
+
+.availability-infos p,
+.payment-infos p,
+.shipping-infos p {
+    line-height: 1.5;
+    margin: .3rem 0 0 0;
+    font-size: 14px;
+}
+
+.payments-logos-holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.logo-wrapper {
+    flex-basis: 23%;
+    margin:1%;
+}
+
+.logo-wrapper img {
+    width: 100%;
+}

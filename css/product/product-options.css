@@ -1,0 +1,141 @@
+.product-title {
+    padding: 1rem 0 0 1rem;
+    margin: 0;
+}
+
+.priceTag {
+    padding: 0 0 .4rem 1rem;
+    color:red;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.discription{
+    padding:0 1rem 0 1rem;
+    line-height: 1.6;
+}
+
+.priceTag ds{
+    font-size: 1.3rem;
+}
+
+.product-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: auto;
+    --borderRadius: 3px;
+    background: white;
+}
+
+label {
+    font-weight: 500;
+}
+
+.color-options {
+    width: 100%;
+    display: flex;
+    border: 1px solid transparant;
+    padding: 1em;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: var(--borderRadius);
+}
+
+.color-options label {
+    margin-right: 1rem;
+}
+
+.color-box {
+    margin: 0 .3rem;
+    border: 1px solid grey;
+    height: 1.5rem;
+    width: 1.5rem;
+    transition-property: outline-width, outline-style, outline-color;
+    transition-duration: 100ms;
+}
+
+.color-box:hover {
+    outline-width: 4px;
+    outline-style: solid;
+    outline-color: black;
+}
+.color-box.selected {
+    outline-width: 4px;
+    outline-style: solid;
+    outline-color: black;
+}
+
+.size-options {
+    width: 100%;
+    padding: 1em;
+}
+
+.size-options select {
+    padding: 10px;
+    width: 100%;
+    border-radius: var(--borderRadius);
+    margin-top: 5px;
+}
+
+.size-options label {
+    margin-bottom: 10px;
+}
+
+.quantity-options {
+    width: 100%;
+    padding: 1em;
+}
+
+.quantity-options input {
+    padding: 10px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.quantity-options label {
+    margin-bottom: 10px;
+}
+
+.addToBasketButton {
+    width: 100%;
+    border: 0;
+    border: 1px solid grey;
+    background: var(--main-color);
+    padding: 10px;
+    color: white;
+    border-radius: var(--borderRadius);
+}
+.addToWishlistButton{
+    width: 100%;
+    border: 0;
+    border: 1px solid black;
+    background: #666674;
+    padding: 10px;
+    margin-top: 5px;
+    color: white;
+    border-radius: var(--borderRadius);
+}
+
+.addToBasketButton:hover, .addToWishlistButton:hover {
+    box-shadow: 1px 1px 17px -7px black;
+}
+
+.button-holder {
+    width: 100%;
+    padding: 1em;
+}
+
+@media(max-width: 1024px) {
+    .product-options{
+        width:100%;
+    }
+}
+
+@media(max-width: 767px) {
+    .product-options{
+        width:100%;
+        margin:0px;
+    }
+}

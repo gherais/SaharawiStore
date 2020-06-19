@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Basket</title>
+    <script src="https://use.fontawesome.com/51fb3ec353.js"></script>
+    <link href="./css/reusables.css" rel="stylesheet" />
+    <link href="./css/header.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/checkout/style.css" />
+    <link rel="stylesheet" href="./css/checkout/userAndOrder.css" />
+    <link rel="stylesheet" href="./css/checkout/supInformation.css" />
+    <style id="firsSectionGrid"></style>
+    <link href="./css/footer.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css1.css">
+</head>
+
+<body>
+    <header>
+        <div class="preNav">
+            <h1 class="logoHolder">SaharawiStore</h1>
+        </div>
+        <nav class="navBar">
+            <div onclick="burgerClicked(this)" class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="logoContainer">
+                <a href="#" class='logo'>SaharawiStore</a>
+            </div>
+            <ul id="links" class="links hide">
+                <li class="link active">Home <i class="fa fa-home" aria-hidden="true"></i></li>
+                <li class="link" onmouseenter="mouseInLinks(this)" onmouseleave="mouseOutLinks(this)">
+                    <span>Categories <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                    <ul id="categories">
+                        <li>Men</li>
+                        <li>Women</li>
+                        <li>Kids</li>
+                    </ul>
+                </li>
+                <li class="link">Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+                <li class="link">Account <i class="fa fa-user" aria-hidden="true"></i></li>
+                <li class="link">About Us</li>
+            </ul>
+        </nav>
+    </header>
+    <!--**********************************************************************************************************/-->
+
+    <div class="container main-grid">
+        <section class="userAndOrder first-section-grid">
+            <div class="g1">
+                <h1 class="titleH1">Checkout</h1>
+                <div><button class="loginButton">Login (Optional)</button></div>
+            </div>
+            <div class="billing-address">
+                <h3 class="titleSecond">Billing Address</h3>
+                <div class="form-controll-holder">
+                    <input type="text" id="firstNameBilling" name="firstName" placeholder="First Name">
+                    <input type="text" id="lastNameBilling" name="lastName" placeholder="Last Name">
+                </div>
+                <div class="form-controll-holder">
+                    <input type="text" name="address" placeholder="Address">
+                </div>
+                <div class="form-controll-holder">
+                    <input type="text" name="city" placeholder="City">
+                    <input type="text" name="zip" placeholder="Zip Code">
+                    <input type="text" name="state" placeholder="State">
+                </div>
+                <div class="form-controll-holder">
+                    <select id="country" name="country">
+                        <option value="algeria" selected>Algeria</option>
+                        <option value="framce">France</option>
+                        <option value="usa">USA</option>
+                        <option value="tunisia">Tunisia</option>
+                        <option value="egypt">Egypt</option>
+                    </select>
+                </div>
+                <div class="form-controll-holder">
+                    <input onchange="checkedShippingSameAsBilling(this)" type="checkbox" name="shippingSameAsBilling" id="shippingSameAsBilling" checked>
+                    <label for="shippingSameAsBilling">Shipping address same as billing address.</label>
+                </div>
+            </div>
+            <div id="shippingAddress" class="shipping-address  hidden">
+                <h3 class="titleSecond">Shipping Address</h3>
+                <div class="form-controll-holder">
+                    <input type="text" name="firstName" placeholder="First Name">
+                    <input type="text" name="lastName" placeholder="Last Name">
+                </div>
+                <div class="form-controll-holder">
+                    <input type="text" name="address" placeholder="Address">
+                </div>
+                <div class="form-controll-holder">
+                    <input type="text" name="city" placeholder="City">
+                    <input type="text" name="zip" placeholder="Zip Code">
+                    <input type="text" name="state" placeholder="State">
+                </div>
+                <div class="form-controll-holder">
+                    <select name="country">
+                        <option value="algeria" selected>Algeria</option>
+                        <option value="framce">France</option>
+                        <option value="usa">USA</option>
+                        <option value="tunisia">Tunisia</option>
+                        <option value="egypt">Egypt</option>
+                    </select>
+                </div>
+                <div class="form-controll-holder">
+                    <input type="tel" id="shippingPhone" name="shippingPhone" placeholder="Shipping Phone Number">
+                </div>
+            </div>
+            <div class="contact-infos">
+                <h3 class="titleSecond">Contact information</h3>
+                <div class="form-controll-labeled-holder">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email Address">
+                </div>
+                <div class="form-controll-labeled-holder">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+                </div>
+                <div class="small-holder"><small>Giving us a telephone number will allow us to contact you in case of questions or problems. If the number is a mobile number, you will also receive a notification when your order leaves our warehouse.</small></div>
+                <div class="form-controll-holder">
+                    <input onchange="checkedCreateAccount(this)" type="checkbox" name="createAccountCheckbox" id="createAccountCheckbox" />
+                    <label for="createAccountCheckbox">Create an account</label>
+                </div>
+                <div id="passwordSection" class="hide">
+                    <div class="form-controll-labeled-holder">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" />
+                    </div>
+                    <div class="form-controll-labeled-holder">
+                        <label for="password_confirmation">Password confirmation</label>
+                        <input type="password" id="password_confirmation" name="password_confirmation" />
+                    </div>
+                    <div class="form-controll-holder">
+                        <input onchange="checkedShowPassword(this)" type="checkbox" name="showPassword" id="showPassword" />
+                        <label for="showPassword">Show password</label>
+                    </div>
+                </div>
+            </div>
+            <div class="method-of-payment">
+                <h3 class="titleSecond">Payment Methods</h3>
+                <p>Please select your payment method</p>
+                <div class="form-controll-holder">
+                    <input id="bankTransfer" type="radio" name="paymentMode" value="bankTransfer" />
+                    <div class="option"><label for="bankTransfer">Bank Transfer<br>
+                            <small>As soon as a member of the SaharawiStore sales department has checked and processed your order, we will send you an order confirmation with the bank details by email. Please note that a bank transfer can take 1-2 working days and we will only ship once payment has been received.</small>
+                        </label></div>
+                </div>
+                <div class="form-controll-holder">
+                    <input id="paypal" type="radio" name="paymentMode" value="paypal" />
+                    <div class="option">
+                        <label for="paypal">Paypal</label><img src="./images/utils/paypal-logo_0096006401665860.png" />
+                    </div>
+                </div>
+                <div class="form-controll-holder">
+                    <input id="creditOrDebitCard" type="radio" name="paymentMode" value="creditOrDebitCard" />
+                    <div class="option">
+                        <label for="creditOrDebitCard">Credit Card</label>
+                        <div>
+                            <img src="./images/utils/PNGHunt.com.png" />
+                            <img src="./images/utils/mc_vrt_opt_pos_73_3x.png" />
+                            <img src="./images/utils/FAVPNG_credit-card-visa-electron-payment-visa-debit_0RCjhWVe.png" />
+                        </div>
+                    </div>
+                </div>
+                <div id="credit-or-debit-card-form-holder" class="hide">
+                    <div class="form-controll-holder">
+                        <input type="tel" pattern="\d*" maxlength="19" id="creditCardNumber" name="creditCardNumber" placeholder="Card Number">
+                    </div>
+                    <div class="form-controll-holder">
+                        <input type="tel" maxlength="5" id="cvv" name="cvv" placeholder="CVV">
+                        <select id="expMonth" name="expMonth">
+                            <option value="expMonth">Exp Month</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <select id="expYear" name="expYear">
+                            <option value="expYear">Exp Year</option>
+                            <option value="20">2020</option>
+                            <option value="21">2021</option>
+                            <option value="22">2022</option>
+                            <option value="23">2023</option>
+                            <option value="24">2024</option>
+                            <option value="25">2025</option>
+                            <option value="26">2026</option>
+                            <option value="27">2027</option>
+                            <option value="28">2028</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="shopping-basket">
+                <div class="basketHeader">
+                    <div class='shoppingBasketTitleHolder'>
+                        <h3 class="titleSecond">Shopping basket</h3>
+                        <a href="#">Edit</a>
+                    </div>
+                </div>
+
+                <div class="basketBody">
+                    <div class="item-holder">
+                        <div class="details">
+                            <h4>Wiw of this item is</h4>
+                            <p>Available immediatly</p>
+                        </div>
+                        <div class="price">
+                            $78
+                        </div>
+                    </div>
+                    <div class="item-holder">
+                        <div class="details">
+                            <h4>Al betikh</h4>
+                            <p>Available in 5 days</p>
+                        </div>
+                        <div class="price">
+                            $63
+                        </div>
+                    </div>
+                    <div class="item-holder">
+                        <div class="details">
+                            <h4>Targui m9amba3 fi dawra yekhdem twiza m9awed ga3</h4>
+                            <p>Available immediatly</p>
+                        </div>
+                        <div class="price">
+                            $47
+                        </div>
+                    </div>
+                    <div class="item-holder">
+                        <div class="details">
+                            <h4>Chach hmar color white loun aswed</h4>
+                            <p>Available immediatly</p>
+                        </div>
+                        <div class="price">
+                            $812
+                        </div>
+                    </div>
+                    <div class="item-holder border-top padding-top">
+                        <div class="details">
+                            <h4>Shipping cost</h4>
+                        </div>
+                        <div class="price">
+                            $0
+                        </div>
+                    </div>
+                </div>
+                <div class="basketFooter">
+                    <span class="boldy">Total</span>
+                    <span class="boldy">$990</span>
+                </div>
+            </div>
+            <div class="options">
+                <h3 class="titleSecond">Options</h3>
+                <div class="shipping-options sec">
+                    <h5>Shippment options</h5>
+                    <div class="options-holder">
+                        <div class="shp-op-holder">
+                            <input id="option1" type="radio" name="shippingOption" class="" />
+                            <label for="option1">
+                                Algeria Post (<p>20-30 days</p>)
+                            </label>
+                        </div>
+                        <label for="option1">
+                            <span>$10</span>
+                        </label>
+                    </div>
+                    <div class="options-holder">
+                        <div class="shp-op-holder">
+                            <input id="option2" type="radio" name="shippingOption" class="" />
+                            <label for="option2">
+                                FedEx (<p>9-16 days</p>)
+                            </label>
+                        </div>
+                        <label for="option2">
+                            <span>$42</span>
+                        </label>
+                    </div>
+                    <div class="options-holder">
+                        <div class="shp-op-holder">
+                            <input id="option3" type="radio" name="shippingOption" class="" />
+                            <label for="option3">
+                                UPS (<p>14-22 days</p>)
+                            </label>
+                        </div>
+                        <label for="option3">
+                            <span>$36</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="other-options sec">
+                    <h5>Other options</h5>
+                    <span onclick="displayVoucher(this)">Enter a <b>Voucher</b> code</span>
+                    <div class="voucher-input-holder hide">
+                        <input type="text" name="voucher" placeholder="Enter code" class="my-input">
+                        <button>Done</button>
+                    </div>
+                </div>
+            </div>
+            <div class="buy-now-and-terms">
+                <div class="buyNowButtonHolder">
+                    <button class="buyNowButton">Buy Now</button>
+                </div>
+                <div class="terms-holder">
+                    <p>Our general <a href="#">terms and conditions</a> apply. You have a <a href="#">14 day right of withdrawal</a> , and we also offer you a <a href="#">30 Day Money Back Guarantee</a> as well as a <a href="#">3 year Thomann warranty</a></p>
+                </div>
+            </div>
+            <div class="empty-div"></div>
+        </section>
+        <section class="supInformation second-section-grid">
+            <div class="main">
+                <article class="availability-infos">
+                    <h3>Note on availability</h3>
+                    <p>All items in your shopping basket are in stock and can be shipped immediately expect <b>el betikh</b> will be available after 5 days.
+                    </p>
+                    <p>
+                        We would be happy to organize a split delivery of all available items in your order if you wish. You can of course cancel your order at any time.
+                    </p>
+                </article>
+                <article class="security-infos">
+                    <h3>Note on Security</h3>
+                    <p>We use an encrypted server to ensure the utmost data confidentiality.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <!--/***********************************************************************************************************/-->
+
+    <footer class="footer">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+        <div class="copyright">
+            <p>Copyright © 2020 <wiw>SahrawiStore</wiw>. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/checkout-userAndOrder.js"></script>
+</body>
+
+</html>

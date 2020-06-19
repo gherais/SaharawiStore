@@ -1,0 +1,31 @@
+.supInformation {}
+
+.availability-infos {
+}
+.security-infos {
+}
+.main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+}
+
+.availability-infos,
+.security-infos {
+  background: white;
+    padding: 1rem;
+    margin-bottom: 5px;
+}
+
+.availability-infos h3, .security-infos h3 {
+    margin: 0;
+    font-weight: 300;
+    padding-bottom: .3rem;
+    font-size: 16px;
+}
+
+.second-section-grid {
+    display: grid;
+    gap:5px;
+    grid-template-areas: 'main';
+}

@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #F5F7F7;
+    margin: 0px;
+    font-family: "Raleway", arial;
+    --main-color: #E19F67; //#1A73E8//#E8F0FE//#666674
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 1170px;
+    margin: 15px auto;
+}
+
+.first-section-grid {
+    width: 800px;
+    grid-area: firstSection;
+}
+
+.second-section-grid {
+    width: 100%;
+    grid-area: secondSection;
+}
+
+.main-grid {
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 'firstSection secondSection';
+}
+
+.titleSecond {
+    margin: 5px 0 15px 0;
+    color:#666674;
+}
+
+@media(max-width: 1199px) and (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+
+    .main-grid {
+        grid-template-areas: 'firstSection secondSection';
+    }
+
+    .first-section-grid {
+        width: 670px;
+    }
+
+}
+
+@media(max-width: 991px) and (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+
+    .main-grid {
+        grid-template-areas: 'firstSection firstSection''secondSection secondSection';
+    }
+
+    .first-section-grid {
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 767px) and (min-width: 375px) {
+    .container {
+        width: auto;
+        padding: 0 6px;
+    }
+
+    .main-grid {
+        grid-template-areas: 'firstSection firstSection''secondSection secondSection';
+    }
+
+    .first-section-grid {
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 374px) {
+    .container {
+        width: auto;
+        padding: 0;
+    }
+
+    .main-grid {
+        grid-template-areas: 'firstSection firstSection''secondSection secondSection';
+    }
+
+    .first-section-grid {
+        width: 100%;
+    }
+
+}

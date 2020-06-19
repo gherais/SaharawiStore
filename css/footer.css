@@ -1,0 +1,49 @@
+.left {
+    grid-area: lefta;
+}
+
+.center {
+    grid-area: centera;
+}
+
+.right {
+    grid-area: righta;
+}
+
+.copyright {
+    grid-area: copyright;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:.9rem;
+    text-align:center;
+    color:white;
+    text-shadow: 1px 1px 10px black;
+}
+
+.footer {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background: url('../images/ghardaia/2-%20GhardaiaGrand.jpg');
+    border-top: 1px solid #666674;
+    box-shadow: 0px -2px 20px -10px black;
+    display: grid;
+    grid-gap: .3rem;
+    grid-template-areas: 'lefta centera righta'
+        'copyright copyright copyright';
+
+}
+
+.left,
+.right,
+.center,
+.copyright {
+    padding: .5rem;
+}
+
+@media(max-width:767px){
+    .copyright{
+        font-size:.8rem;
+    }
+}

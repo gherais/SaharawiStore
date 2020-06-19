@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+    <script src="https://use.fontawesome.com/51fb3ec353.js"></script>
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/product/style.css" rel="stylesheet" />
+    <link href="./css/product/product-images.css" rel="stylesheet" />
+    <link href="./css/product/product-options.css" rel="stylesheet" />
+    <link href="./css/product/product-infos.css" rel="stylesheet" />
+    <link href="./css/reusables.css" rel="stylesheet" />
+    <link href="./css/header.css" rel="stylesheet" />
+    <link href="./css/footer.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <div class="preNav">
+            <h1 class="logoHolder">SaharawiStore</h1>
+        </div>
+        <nav class="navBar">
+            <div onclick="burgerClicked(this)" class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="logoContainer">
+                <a href="#" class='logo'>SaharawiStore</a>
+            </div>
+            <ul id="links" class="links hide">
+                <li class="link active">Home <i class="fa fa-home" aria-hidden="true"></i></li>
+                <li class="link" onmouseenter="mouseInLinks(this)" onmouseleave="mouseOutLinks(this)">
+                    <span>Categories <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                    <ul id="categories">
+                        <li>Men</li>
+                        <li>Women</li>
+                        <li>Kids</li>
+                    </ul>
+                </li>
+                <li class="link">Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+                <li class="link">Account <i class="fa fa-user" aria-hidden="true"></i></li>
+                <li class="link">About Us</li>
+            </ul>
+        </nav>
+    </header>
+    <!--**********************************************************************************************************/-->
+
+
+
+<div class="container">
+    <section class="product-details-container">
+        <div id="productImagesContainer" class="product-images">
+            <div id="bigImageContainer" class='big-image-container'></div>
+        </div>
+        <div id="productOptionsContainer" class="product-options">
+            <h1 class="product-title">Product Name</h1>
+            <span class="priceTag">47<ds>$</ds></span>
+            <p class="description">Here we write the description of the product and what is it about and short infos about it so client can get to know it</p>
+            <div id="colorOptions" class="color-options">
+                <label> color </label>
+            </div>
+            <div class="size-options">
+                <label for="sizeOption">Size </label>
+                <select id="sizeOption" name="sizeOption">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                    <option value="xxl">XXL</option>
+                </select>
+            </div>
+            <div class="quantity-options">
+                <label for="quantity">Quantity </label>
+                <input type="number" id="quantity" name="quantity" value="1" oninput="quantityCheck(this)" />
+            </div>
+            <div class="button-holder">
+                <button class="addToBasketButton">Add to cart <i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                <button class="addToWishlistButton">Add to wishlist <i class="fa fa-list-ol" aria-hidden="true"></i></button>
+            </div>
+        </div>
+        <div id="productInfosContainer" class="product-infos">
+            <ul class="tabs">
+                <li class="tab"><button class="tab-button descriptionButton tableft active" onclick="descriptionClicked(this)">Description</button></li>
+                <li class="tab"><button class="tab-button reviewsButton" onclick="reviewsAndRatingsClicked(this)">Reviews & Ratings</button></li>
+            </ul>
+            <section class="description-content">
+                <h3>Some Thing here</h3>
+                <p> You put some paragraphs here to talk about your product and then:</p>
+                <ul>
+                    <li>Option One </li>
+                    <li>Please big things popping </li>
+                    <li>About normal staff</li>
+                    <li>Happy to know You</li>
+                    <li>Marry christmes</li>
+                </ul>
+                <p>You put another Paragraph in here so you can talk about it in your dreams motherfucker  so it is getting started to get hot now.</p>
+                <p>Haha please bitch get off the road get off the road get off the road pleas bitch get off theroad You put another Paragraph in </p>
+            </section>
+            <section class="reviews-content hide">
+                <article class = "review">
+                    <h5>Name Secondname</h5>
+                    <p>gherais Ben Aissa Mustapha ghgerais benaissa mustapha gheras benaissa mustapha ghgerais benaissa mustpha gherais benaissa mustapha gheraisbenaissa mustapha gherais benaissa mustapha gherais benai mustaph gherais benaissa mustaph gherais benaissa mustapha</p>
+                </article>
+                <article class = "review">
+                    <h5>Name Secondname</h5>
+                    <p>gherais Ben Aissa Mustapha ghgerais benaissa mustapha gheras benaissa mustapha ghgerais benaissa mustpha gherais benaissa mustapha gheraisbenaissa mustapha gherais benaissa mustapha gherais benai mustaph gherais benaissa mustaph gherais benaissa mustapha</p>
+                </article>
+                <article class = "review">
+                    <h5>Name Secondname</h5>
+                    <p>gherais Ben Aissa Mustapha ghgerais benaissa mustapha gheras benaissa mustapha ghgerais benaissa mustpha gherais benaissa mustapha gheraisbenaissa mustapha gherais benaissa mustapha gherais benai mustaph gherais benaissa mustaph gherais benaissa mustapha</p>
+                </article>
+                <article class = "review">
+                    <h5>Name Secondname</h5>
+                    <p>gherais Ben Aissa Mustapha ghgerais benaissa mustapha gheras benaissa mustapha ghgerais benaissa mustpha gherais benaissa mustapha gheraisbenaissa mustapha gherais benaissa mustapha gherais benai mustaph gherais benaissa mustaph gherais benaissa mustapha</p>
+                </article>
+            </section>
+        </div>
+    </section>
+</div>
+
+
+
+
+    <!--/***********************************************************************************************************/-->
+
+    <footer class="footer">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+        <div class="copyright">
+            <p>Copyright © 2020 <wiw>SahrawiStore</wiw>. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/product-images.js"></script>
+    <script src="./scripts/product-options.js"></script>
+    <script src="./scripts/product-infos.js"></script>
+</body>
+
+</html>
