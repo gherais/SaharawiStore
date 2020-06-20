@@ -152,3 +152,58 @@
     margin-left: 14px;
     font-weight: 500;
 }
+
+@media(max-width: 1199px) and (min-width: 992px) {
+
+}
+
+@media(max-width: 991px) and (min-width:801px) {
+
+}
+
+@media(max-width: 800px) {
+    .orders-content {
+        margin:5px 0;
+    }
+    
+.completed-orders,
+    .pending-orders {
+        margin-left: 0;
+    }
+    
+    .pending-orders{
+        margin-top: 28px;
+    }
+    
+    .order-header{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        line-height: 1.6;
+    }
+    .order-body {
+        flex-direction: column;
+    }
+    .delivery-to,
+    .order-content {
+        width: 100%
+    }
+    .delivery-to {
+        border-left-width: 0;
+        border-bottom: 1px solid lightgrey;
+        order:1;
+        padding-left: 14px;
+    }
+    .order-content {
+        order: 2;
+    }
+}
+
+@media(max-width: 800px) and (min-width: 375px) {
+
+}
+
+@media(max-width: 374px) {
+
+}
