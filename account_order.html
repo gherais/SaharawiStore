@@ -1,0 +1,239 @@
+<span class="left-element"></span>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Basket</title>
+    <script src="https://use.fontawesome.com/51fb3ec353.js"></script>
+    <link href="./css/reusables.css" rel="stylesheet" />
+    <link href="./css/header.css" rel="stylesheet" />
+    <link href="./css/account/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/account/dash-menu.css" />
+    <link rel="stylesheet" href="./css/account/order/order.css" />
+    <link href="./css/footer.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div class="preNav">
+            <h1 class="logoHolder">SaharawiStore</h1>
+        </div>
+        <nav class="navBar">
+            <div onclick="burgerClicked(this)" class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="logoContainer">
+                <a href="#" class='logo'>SaharawiStore</a>
+            </div>
+            <ul id="links" class="links hide">
+                <li class="link active">Home <i class="fa fa-home" aria-hidden="true"></i></li>
+                <li class="link" onmouseenter="mouseInLinks(this)" onmouseleave="mouseOutLinks(this)">
+                    <span>Categories <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                    <ul id="categories">
+                        <li>Men</li>
+                        <li>Women</li>
+                        <li>Kids</li>
+                    </ul>
+                </li>
+                <li class="link">Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+                <li class="link">Account <i class="fa fa-user" aria-hidden="true"></i></li>
+                <li class="link">About Us</li>
+            </ul>
+        </nav>
+    </header>
+    <!--**********************************************************************************************************/-->
+
+    <div class="container my-grid">
+        <section class="dash-menu flex-item">
+            <ul class="menu-links">
+                <li class="menu-link">My Orders</li>
+                <li class="menu-link">My Addresses</li>
+                <li class="menu-link">My Payment methods</li>
+                <li class="menu-link">Account settings</li>
+            </ul>
+            <i onclick="clickedIconMenu(this)" class="fa fa-user-circle user-icon" aria-hidden="true"></i>
+        </section>
+        <section class="order-container flex-item">
+            <div class="title-holder">
+                <h1 class="titleH1">Order id 29876</h1>
+            </div>
+            <div class="order">
+                <div class="general-information">
+                    <div class="header font1">General information</div>
+                    <div class="content">
+                        <div class="data-holder font2">
+                            <strong>Order id: </strong><span> 29876</span>
+                        </div>
+                        <div class="data-holder font2">
+                            <strong>Date of ordering: </strong><span> 28-04-2020</span>
+                        </div>
+                        <div class="data-holder font2">
+                            <strong>Date of shipping: </strong><span> 30-04-2020</span>
+                        </div>
+                        <div class="data-holder font2">
+                            <strong>Estimated date of delivery: </strong><span> 12-05-2020</span>
+                        </div>
+                        <div class="data-holder font2">
+                            <strong>Used voucher: </strong><span> C567T09 <b>20% off</b></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="status">
+                    <div class="header font1">Status</div>
+                    <div class="content">
+                        <div class="font3 green">Shipped</div>
+                        <p class="font2">This order had been fully shipped.</p>
+                    </div>
+                </div>
+                <div class="billing">
+                    <div class="header font1">Billing information</div>
+                    <div class="content">
+                        <div class="data-holder font2">
+                            <strong>Full Name: </strong><span> Gherais Benaissa Mustapha</span>
+                        </div>
+                        <div class="data-holder font2">
+                            <strong>Address: </strong><span> Cite 140 logs cite Chaib bt03 bloc B numero 03</span>
+                        </div>
+                        <div class="data-holder font2">
+                            <strong>City: </strong><span> Tiaret</span>
+                        </div>
+                        <div class="data-holder font2">
+                            <strong>Zip: </strong><span> 14000</span>
+                        </div>
+                        <div class="data-holder font2">
+                            <strong>State: </strong><span> Tiaret</span>
+                        </div>
+                        <div class="data-holder font2">
+                            <strong>Country: </strong><span> Algeria</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shipping">
+                    <div class="header font1">Delivery to</div>
+                    <div class="content">
+                        <div class="data-holder font2">
+                            <strong>Full Name: </strong><span> Gherais Mohamed Said</span>
+                        </div>
+                        <div class="data-holder font2">
+                            <strong>Address: </strong><span> Chaabet Nichan numero 01</span>
+                        </div>
+                        <div class="data-holder font2">
+                            <strong>City: </strong><span> Ghardaia</span>
+                        </div>
+                        <div class="data-holder font2">
+                            <strong>Zip: </strong><span> 47000</span>
+                        </div>
+                        <div class="data-holder font2">
+                            <strong>State: </strong><span> Ghardaia</span>
+                        </div>
+                        <div class="data-holder font2">
+                            <strong>Country: </strong><span> Algeria</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="header font1">Purchased items</div>
+                    <div class="content">
+                        <div class="order-items-container">
+                            <div class="item-holder">
+                                <div class="details">
+                                    <h4>Wiw of this item is</h4>
+                                    <p>Quantity: <b>1</b></p>
+                                </div>
+                                <div class="price">
+                                    $78
+                                </div>
+                            </div>
+                            <div class="item-holder">
+                                <div class="details">
+                                    <h4>Al betikh</h4>
+                                    <p>Quantity: <b>2</b></p>
+                                </div>
+                                <div class="price">
+                                    $63
+                                </div>
+                            </div>
+                            <div class="item-holder">
+                                <div class="details">
+                                    <h4>Targui m9amba3 fi dawra yekhdem twiza m9awed ga3</h4>
+                                    <p>Quantity: <b>1</b></p>
+                                </div>
+                                <div class="price">
+                                    $47
+                                </div>
+                            </div>
+                            
+                                <div class="data-holder font2">
+                                    <strong>Used voucher: </strong><span> C567T09 <b>20% off</b></span>
+                                </div>
+                            
+                            
+                                <div class="data-holder font2">
+                                    <strong>Shipping cost: </strong><span> <b>$17</b></span>
+                                </div>
+                            
+                        </div>
+                        <div class="total-payment-container">
+                            <strong>Total: </strong><span><b>$470</b></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment">
+                    <div class="header font1">Payment</div>
+                    <div class="content">
+                        <div class="data-holder font2">
+                            <strong>Payment method: </strong><span> Credit Card</span>
+                        </div>
+                        <div class="data-holder font2">
+                            <strong>Card: </strong><span> 4134**********90</span>
+                        </div>
+                        <div class="data-holder font2">
+                            <strong>Payment status: </strong><span class="green"> Succeeded</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shipping-options">
+                    <div class="header font1">Shipping options</div>
+                    <div class="content">
+                        <div class="data-holder font2">
+                            <strong>Company: </strong><span> Ups</span>
+                        </div>
+                        <div class="data-holder font2">
+                            <strong>Estimated time of shipping: </strong><span> 12 - 16 days</span>
+                        </div>
+                        <div class="data-holder font2">
+                            <strong>Cost: </strong><span> $17</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="options">
+                    <div class="header font1">Options</div>
+                    <div class="content flex-column">
+                        <a href="#">Print</a>
+                        <a href="#">Leave your opinion</a>
+                        <a href="#">Ask for a refund</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--/***********************************************************************************************************/-->
+
+    <footer class="footer">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+        <div class="copyright">
+            <p>Copyright © 2020 <wiw>SahrawiStore</wiw>. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/account-dash-menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+.order-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.general-information {
+    grid-area: general-information;
+}
+
+.status {
+    grid-area: status;
+}
+
+.billing {
+    grid-area: billing;
+}
+
+.shipping {
+    grid-area: shipping;
+}
+
+.items {
+    grid-area: items;
+}
+
+.payment {
+    grid-area: payment;
+}
+
+.shipping-options {
+    grid-area: shipping-options;
+}
+
+.options {
+    grid-area: options;
+}
+
+.general-information,
+.status,
+.billing,
+.shipping,
+.items,
+.payment,
+.shipping-options,
+.options {
+    width: 100%;
+    background: white;
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+}
+
+.order {
+    margin-left: 28px;
+    width: 100%;
+    border-radius: 5px;
+    display: grid;
+    gap: 7px;
+    grid-template-areas: 'general-information status''billing shipping''items payment''shipping-options options'
+}
+
+.header {
+    border-bottom: 1px solid lightgrey;
+    background: #F5F7F7;
+    color: #696974;
+    padding: 7px;
+    border-radius: 5px 5px 0 0;
+}
+
+.content {
+    padding: 7px;
+    color: #696974;
+}
+
+.data-holder {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*************************************************************************************/
+.order-items-container {
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+}
+
+.item-holder {
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 0;
+}
+
+.item-holder h4 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    color: #464644;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.item-holder h4:hover {
+    color: #0b78c1;
+}
+
+.item-holder p {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-right: 15px;
+    font-size: 12px;
+}
+
+.item-holder .price {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.total-payment-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 7px 7px 0 7px;
+    border-top: 3px solid lightgrey;
+
+}
+
+.total-payment-container span b {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.item-holder {
+    border-bottom: 1px solid lightgrey;
+}
+
+.content a {
+    color: #696974;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+/*************************************************************************************/
+
+.font1 {
+    line-height: 1.6;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.font2 {
+    line-height: 1.6;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.font3 {
+    line-height: 1.6;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+
+@media(max-width: 1199px) and (min-width: 992px) {}
+
+@media(max-width: 991px) and (min-width:801px) {}
+
+@media(max-width: 800px) {
+    .orders-content {
+        margin: 5px 0;
+    }
+
+    .header {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+    
+    .order {
+    margin-left: 0;
+    grid-template-areas: 'general-information' 'status''billing' 'shipping''items' 'payment''shipping-options' 'options'
+}
+}
+
+@media(max-width: 800px) and (min-width: 375px) {}
+
+@media(max-width: 374px) {}
