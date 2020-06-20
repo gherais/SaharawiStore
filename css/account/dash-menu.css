@@ -1,5 +1,6 @@
 .dash-menu {
     position: relative;
+    margin-top: 21px;
 }
 
 .user-icon {
@@ -59,5 +60,20 @@
     }
     .menu-links.show {
         display:block;
+    }
+    
+    .dash-menu {
+        margin-top: 0;
+    }
+    
+    .dash-menu:hover {
+    }
+    
+    .dash-menu.expanded {
+        margin-top: 35px;
+    }
+    
+    .title-holder{
+        display:none;
     }
 }

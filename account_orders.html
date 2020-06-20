@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Basket</title>
+    <script src="https://use.fontawesome.com/51fb3ec353.js"></script>
+    <link href="./css/reusables.css" rel="stylesheet" />
+    <link href="./css/header.css" rel="stylesheet" />
+    <link href="./css/account/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/account/dash-menu.css" />
+    <link rel="stylesheet" href="./css/account/my orders/orders-content.css" />
+    <link href="./css/footer.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div class="preNav">
+            <h1 class="logoHolder">SaharawiStore</h1>
+        </div>
+        <nav class="navBar">
+            <div onclick="burgerClicked(this)" class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="logoContainer">
+                <a href="#" class='logo'>SaharawiStore</a>
+            </div>
+            <ul id="links" class="links hide">
+                <li class="link active">Home <i class="fa fa-home" aria-hidden="true"></i></li>
+                <li class="link" onmouseenter="mouseInLinks(this)" onmouseleave="mouseOutLinks(this)">
+                    <span>Categories <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                    <ul id="categories">
+                        <li>Men</li>
+                        <li>Women</li>
+                        <li>Kids</li>
+                    </ul>
+                </li>
+                <li class="link">Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+                <li class="link">Account <i class="fa fa-user" aria-hidden="true"></i></li>
+                <li class="link">About Us</li>
+            </ul>
+        </nav>
+    </header>
+    <!--**********************************************************************************************************/-->
+
+    <div class="container my-grid">
+        <section class="dash-menu flex-item">
+            <ul class="menu-links">
+                <li class="menu-link">My Orders</li>
+                <li class="menu-link">My Addresses</li>
+                <li class="menu-link">My Payment methods</li>
+                <li class="menu-link">Account settings</li>
+            </ul>
+            <i onclick="clickedIconMenu(this)" class="fa fa-user-circle user-icon" aria-hidden="true"></i>
+        </section>
+        <section class="orders-content flex-item">
+            <div class="title-holder">
+                <h1 class="titleH1">My Orders</h1>
+            </div>
+            <article class="orders-content-container">
+                <section class="pending-orders">
+                    <div class="section-header">
+                        Pending orders
+                    </div>
+                    <div class="orders-container">
+                        <article class="order">
+                            <div class="order-header">
+                                test
+                            </div>
+                        </article>
+                        <article class="order">
+                            <div class="order-header">
+                                test
+                            </div>
+                        </article>
+                        <article class="order">
+                            <div class="order-header">
+                                test
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <section class="completed-orders">
+                    <div class="section-header">
+                        Completed orders
+                    </div>
+                    <div class="orders-container">
+                        <article class="order">
+                            <div class="order-header">
+                                test
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </article>
+
+        </section>
+    </div>
+    <!--/***********************************************************************************************************/-->
+
+    <footer class="footer">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+        <div class="copyright">
+            <p>Copyright © 2020 <wiw>SahrawiStore</wiw>. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/account-dash-menu.js"></script>
+    <script src="./scripts/account-orders-content.js"></script>
+</body>
+
+</html>
