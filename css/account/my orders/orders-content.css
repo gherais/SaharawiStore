@@ -35,27 +35,25 @@
 
 .orders-container {
     width: 100%;
-    padding:14px;
+    padding: 14px;
 }
 
 .order {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 100%;
     border: 1px solid lightgrey;
-    height: 13vh;
     border-radius: 5px 5px 0 0;
-    margin-bottom:7px;
+    margin-bottom: 7px;
 }
 
 .order-header {
     padding: 7px;
     border-radius: 5px 5px 0 0;
-    background:#F5F7F7;
-    color:#696974;
-    border-bottom:1px solid lightgrey;
-    display:flex;
+    background: #F5F7F7;
+    color: #696974;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -67,7 +65,90 @@
 }
 
 .order-body {
-    padding: 7px;
     color: #696974;
     display: flex;
+    width: 100%;
+    font-size: 12px;
+    color: #696974;
+    line-height: 1.6;
+}
+
+.order-content,
+.delivery-to {
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+}
+
+.order-content {
+    width: 65%;
+    justify-content: space-between;
+}
+
+.order-items-container {
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+}
+
+.item-holder {
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 0;
+}
+
+.item-holder h4 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    color: #464644;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.item-holder h4:hover {
+    color: #0b78c1;
+}
+
+.item-holder p {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-right: 15px;
+    font-size: 12px;
+}
+
+.item-holder .price {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.total-payment-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 7px 7px 0 7px;
+    border-top: 1px solid lightgrey;
+
+}
+
+.total-payment-container span b {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.delivery-to {
+    margin-left: auto;
+    width: 35%;
+    border-left: 1px solid lightgrey;
+}
+
+.delivery-to em {
+    margin: 4px 0;
+}
+
+.delivery-to span {
+    margin-left: 14px;
+    font-weight: 500;
 }
