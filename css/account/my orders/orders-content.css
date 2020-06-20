@@ -55,5 +55,19 @@
     background:#F5F7F7;
     color:#696974;
     border-bottom:1px solid lightgrey;
-    
+    display:flex;
+    justify-content: space-between;
+}
+
+.order-header .left-element,
+.order-header .right-element {
+    color: grey;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.order-body {
+    padding: 7px;
+    color: #696974;
+    display: flex;
 }

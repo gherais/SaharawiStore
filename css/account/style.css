@@ -40,6 +40,10 @@ body {
     font-size: 2rem;
 }
 
+.red {
+    color: orangered;
+}
+
 @media(max-width: 1199px) and (min-width: 992px) {
     .container {
         width: 970px;
