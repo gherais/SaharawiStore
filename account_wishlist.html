@@ -1,0 +1,145 @@
+<span class="left-element"></span>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My wishlist</title>
+    <script src="https://use.fontawesome.com/51fb3ec353.js"></script>
+    <link href="./css/reusables.css" rel="stylesheet" />
+    <link href="./css/header.css" rel="stylesheet" />
+    <link href="./css/account/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/account/dash-menu.css" />
+    <link rel="stylesheet" href="./css/account/wishlist/wishlist.css" />
+    <link href="./css/footer.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div class="preNav">
+            <h1 class="logoHolder">SaharawiStore</h1>
+        </div>
+        <nav class="navBar">
+            <div onclick="burgerClicked(this)" class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="logoContainer">
+                <a href="#" class='logo'>SaharawiStore</a>
+            </div>
+            <ul id="links" class="links hide">
+                <li class="link active">Home <i class="fa fa-home" aria-hidden="true"></i></li>
+                <li class="link" onmouseenter="mouseInLinks(this)" onmouseleave="mouseOutLinks(this)">
+                    <span>Categories <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                    <ul id="categories">
+                        <li>Men</li>
+                        <li>Women</li>
+                        <li>Kids</li>
+                    </ul>
+                </li>
+                <li class="link">Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+                <li class="link">Account <i class="fa fa-user" aria-hidden="true"></i></li>
+                <li class="link">About Us</li>
+            </ul>
+        </nav>
+    </header>
+    <!--**********************************************************************************************************/-->
+
+    <div class="container my-grid">
+        <section class="dash-menu flex-item">
+            <ul class="menu-links">
+                <li class="menu-link">My Orders</li>
+                <li class="menu-link">My Addresses</li>
+                <li class="menu-link">My Payment methods</li>
+                <li class="menu-link">Account settings</li>
+            </ul>
+            <i onclick="clickedIconMenu(this)" class="fa fa-user-circle user-icon" aria-hidden="true"></i>
+        </section>
+        <section class="wishlist-container flex-item">
+            <div class="title-holder">
+                <h1 class="titleH1">My wishlist</h1>
+            </div> 
+            <div class="wishlist">
+               <!-- -----------------------------table start--------------------------------- -->
+            <table class="items-in-basket-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th></th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="item-row">
+                        <td class="imgColumn"><img src="images/People&Products/1%20(1).jpg" /></td>
+                        <td class="productColumn">
+                            <div class="productHolder">
+                                <h5>Name of item</h5>
+                                <p>Available immediatly</p>
+                                <div class="links">
+                                    <a href="#" class="font2 green" style="line-height:1;">Move to cart</a>
+                                    <a href="#" class="font2 green" style="line-height:1;">Distribute</a>
+                                    <a href="#">Delete</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="priceColumn">$47</td>
+                    </tr>
+                    <tr class="item-row">
+                        <td class="imgColumn"><img src="images/People&Products/1%20(3).jpg" /></td>
+                        <td class="productColumn">
+                            <div class="productHolder">
+                                <h5>Wiw of this item is</h5>
+                                <p>Available immediatly</p>
+                                <div class="links">
+                                    <a href="#" class="font2 green" style="line-height:1;">Move to cart</a>
+                                    <a href="#" class="font2 green" style="line-height:1;">Distribute</a>
+                                    <a href="#">Delete</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="priceColumn">$67</td>
+                    </tr>
+                    <tr class="item-row">
+                        <td class="imgColumn"><img src="images/People&Products/1%20(6).jpg" /></td>
+                        <td class="productColumn">
+                            <div class="productHolder">
+                                <h5>Targui labess lazrag</h5>
+                                <p>Available immediatly</p>
+                                <div class="links">
+                                    <a href="#" class="font2 green" style="line-height:1;">Move to cart</a>
+                                    <a href="#" class="font2 green" style="line-height:1;">Distribute</a>
+                                    <a href="#">Delete</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="priceColumn">$134</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="buttons-holder">
+                   <button class="distribute">Distribute a copy</button>
+                   <button class="to-cart">Move all to cart</button>
+            </div>
+            <!-- -------------------------------table end------------------------------- -->  
+            </div>
+        </section>
+    </div>
+    <!--/***********************************************************************************************************/-->
+
+    <footer class="footer">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+        <div class="copyright">
+            <p>Copyright © 2020 <wiw>SahrawiStore</wiw>. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/account-dash-menu.js"></script>
+</body>
+
+</html>
