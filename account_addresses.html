@@ -1,0 +1,178 @@
+<span class="left-element"></span>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My addresses</title>
+    <script src="https://use.fontawesome.com/51fb3ec353.js"></script>
+    <link href="./css/reusables.css" rel="stylesheet" />
+    <link href="./css/header.css" rel="stylesheet" />
+    <link href="./css/account/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/account/dash-menu.css" />
+    <link rel="stylesheet" href="./css/account/addresses/addresses.css" />
+    <link href="./css/footer.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div class="preNav">
+            <h1 class="logoHolder">SaharawiStore</h1>
+        </div>
+        <nav class="navBar">
+            <div onclick="burgerClicked(this)" class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="logoContainer">
+                <a href="#" class='logo'>SaharawiStore</a>
+            </div>
+            <ul id="links" class="links hide">
+                <li class="link active">Home <i class="fa fa-home" aria-hidden="true"></i></li>
+                <li class="link" onmouseenter="mouseInLinks(this)" onmouseleave="mouseOutLinks(this)">
+                    <span>Categories <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                    <ul id="categories">
+                        <li>Men</li>
+                        <li>Women</li>
+                        <li>Kids</li>
+                    </ul>
+                </li>
+                <li class="link">Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+                <li class="link">Account <i class="fa fa-user" aria-hidden="true"></i></li>
+                <li class="link">About Us</li>
+            </ul>
+        </nav>
+    </header>
+    <!--**********************************************************************************************************/-->
+
+    <div class="container my-grid">
+        <section class="dash-menu flex-item">
+            <ul class="menu-links">
+                <li class="menu-link">My Orders</li>
+                <li class="menu-link">My Addresses</li>
+                <li class="menu-link">My Payment methods</li>
+                <li class="menu-link">Account settings</li>
+            </ul>
+            <i onclick="clickedIconMenu(this)" class="fa fa-user-circle user-icon" aria-hidden="true"></i>
+        </section>
+        <section class="addresses-container flex-item">
+            <div class="title-holder">
+                <h1 class="titleH1">My addresses</h1>
+            </div>
+            <div class="addresses">
+               <div id="section3">
+                    <div class="cont">
+                        <div class="bmg-table">
+                            <div class="bmg-table-head">
+                                <div class="bmg-row">
+                                    <div class="bmg-column-title c1">Name</div>
+                                    <div class="bmg-column-title c2">Full address</div>
+                                    <div class="bmg-column-title c3"></div>
+                                </div>
+                            </div>
+                            <div class="bmg-table-body">
+                                <div class="bmg-row">
+                                    <div class="bmg-column c1">Home</div>
+                                    <div class="bmg-column c2">Chaabet Nichan Numero 01, 47000 Ghardaia, Ghardaia, Algeria</div>
+                                    <div class="bmg-column c3c"><div class="flex-horizon"><span onclick="editThis(this)">edit</span><span onclick="deleteThis(this)">delete</span></div></div>
+                                </div>
+                                <div class="bmg-row">
+                                    <div class="bmg-column c1">Work</div>
+                                    <div class="bmg-column c2">Centre ville ghardai number 4654, 47000 Ghardaia, Ghardaia, Algeria</div>
+                                    <div class="bmg-column c3c"><div class="flex-horizon"><span onclick="editThis(this)">edit</span><span onclick="deleteThis(this)">delete</span></div></div>
+                                </div>
+                                <div class="bmg-row">
+                                    <div class="bmg-column c1">Lussy's</div>
+                                    <div class="bmg-column c2">Avenue street 4567, 34009 Manhatan, NY, USA</div>
+                                    <div class="bmg-column c3c"><div class="flex-horizon"><span onclick="editThis(this)">edit</span><span onclick="deleteThis(this)">delete</span></div></div>
+                                </div>
+                                <div class="bmg-row">
+                                    <div class="bmg-column c1">Mother's</div>
+                                    <div class="bmg-column c2">Chaabet Nichan Numero 02, 47000 Ghardaia, Ghardaia, Algeria</div>
+                                    <div class="bmg-column c3c"><div class="flex-horizon"><span onclick="editThis(this)">edit</span><span onclick="deleteThis(this)">delete</span></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="section1">
+                    <div class="cont">
+                        <div class="content-cont">
+                            <div class="section-title">
+                                Add an address
+                            </div>
+                            <div class="form-controll-holder">
+                                <input type="text" name="address" placeholder="Address">
+                            </div>
+                            <div class="form-controll-holder">
+                                <input type="text" name="city" placeholder="City">
+                                <input type="text" name="zip" placeholder="Zip Code">
+                                <input type="text" name="state" placeholder="State">
+                            </div>
+                            <div class="form-controll-holder">
+                                <select id="country" name="country">
+                                    <option value="algeria" selected>Algeria</option>
+                                    <option value="france">France</option>
+                                    <option value="usa">USA</option>
+                                    <option value="tunisia">Tunisia</option>
+                                    <option value="egypt">Egypt</option>
+                                </select>
+                            </div>
+                            <div class="form-controll-holder">
+                                <input type="text" name="address-name" placeholder="Give it a name">
+                            </div>
+                            <div class="buttons-container"><button class="add-button">Add</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="section2">
+                    <div class="cont">
+                       <div class="content-cont">
+                            <div class="section-title">
+                                Defaults
+                            </div>
+                            <div class="sec">
+                                <div class="small-title"><em><strong>Billing:</strong></em></div>
+                                <select name="billingDefault">
+                                    <option value="0">Home</option>
+                                    <option value="1">Work</option>
+                                    <option value="2">Lussy's</option>
+                                    <option value="3">Mother's</option>
+                                </select>
+                            </div>
+                            <div class="sec">
+                                <div class="small-title"><em><strong>Shipping:</strong></em></div>
+                                <select name="billingDefault">
+                                    <option value="0">Home</option>
+                                    <option value="1">Work</option>
+                                    <option value="2">Lussy's</option>
+                                    <option value="3">Mother's</option>
+                                </select>
+                            </div>
+                            <button class="add-button">Save</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+    <!--/***********************************************************************************************************/-->
+
+    <footer class="footer">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+        <div class="copyright">
+            <p>Copyright © 2020 <wiw>SahrawiStore</wiw>. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/account-dash-menu.js"></script>
+    <script src="./scripts/account-addresses.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+.addresses-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.addresses {
+    margin-left: 28px;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    border-bottom: 1px solid lightgrey;
+    background: #F5F7F7;
+    color: #696974;
+    padding: 7px;
+    border-radius: 5px 5px 0 0;
+}
+
+.content {
+    padding: 7px;
+    color: #696974;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #696974;
+    margin-bottom: 14px;
+    margin-left: 7px;
+}
+
+#section1,
+#section2,
+#section3 {
+    padding: 7px;
+}
+
+#section1 {
+    flex-basis: 61.8%;
+}
+
+#section2 {
+    flex-basis: 38.2%;
+}
+
+#section3 {
+    flex-basis: 100%;
+}
+
+.cont {
+    padding: 14px;
+    border: 1px solid lightgrey;
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+    background: white;
+}
+
+.form-controll-holder {
+    width: 100%;
+    display: flex;
+}
+
+label {
+    margin: 3px;
+}
+
+.my-input,
+select,
+.form-controll-holder input[type="text"] {
+    width: 100%;
+    font-size: 16px;
+    padding: 5px;
+    margin: 2px;
+    height: 42px;
+}
+
+#country {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-width: 1px;
+}
+
+input,
+select {
+    font-family: raleway, arial;
+    font-weight: 500;
+    background: #e9F1F1;
+    border-width: 1px;
+    outline-color: black;
+    border-color: transparent;
+}
+
+.buttons-container {
+    width: 100%;
+    display: flex;
+}
+
+.add-button {
+    width: 100%;
+    border-style: solid;
+    color: #f5f7f7;
+    background: #696974;
+    padding: 14px;
+    font-size: 16px;
+    border-color: #f5f7f7;
+    transition-property: border-color color background;
+    transition-duration: 150ms;
+}
+
+.add-button:hover {
+    border-color: #696974;
+    background: #f5f7f7;
+    color: #696974;
+}
+
+.content-cont {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.small-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #696974;
+    margin: 14px 7px;
+}
+
+/*************************************bmg table start ************************************/
+
+.bmg-table {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+    border: 2px solid #696974;
+    border-radius: 7px;
+    font-size: 14px;
+    color: #696974;
+}
+
+.bmg-table-head,
+.bmg-table-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.bmg-table-head {
+    border-bottom: 2px solid #696974;
+    background: #696974;
+    color: white;
+}
+
+.bmg-table-body {}
+
+.bmg-row {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #696974;
+    padding: 7px;
+}
+
+.bmg-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.bmg-column-title {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+
+.c1 {
+    width: 20%;
+}
+
+.c2 {
+    width: 65%;
+}
+
+.c3,
+.c3c {
+    width: 15%;
+}
+
+.flex-horizon {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-horizon span {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/*************************************bmg table end **************************************/
+.font1 {
+    line-height: 1.6;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.font2 {
+    line-height: 1.6;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.font3 {
+    line-height: 1.6;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+@media(max-width: 800px) {
+    .addresses {
+        margin-left: 0;
+        padding: 7px;
+    }
+
+    #section1 {
+        flex-basis: 100%;
+    }
+
+    #section2 {
+        flex-basis: 100%;
+    }
+
+}
+
+
+@media(max-width: 767px){
+    .addresses {
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #section1,
+    #section2,
+    #section3 {
+        padding: 0;
+        margin-top: 14px;
+    }
+
+    .c1 {
+        width: 25%;
+    }
+
+    .c2 {
+        width: 50%;
+    }
+
+    .c3,
+    .c3c {
+        width: 25%;
+    }
+    .c3c .flex-horizon {
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+    }
+
+}
